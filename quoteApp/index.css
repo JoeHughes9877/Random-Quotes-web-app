@@ -1,0 +1,91 @@
+/* Import Google Fonts for custom typography */
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Rouge+Script&family=Unlock&display=swap');
+
+/* Global Styles */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* Default font and color for body */
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+}
+
+/* Styling for the main container */
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styles */
+h1 {
+    font-family: "Unlock", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Styling for the quote text */
+#heading {
+    font-family: "Rouge Script", cursive;
+    font-size: 1.8rem;
+    color: #555;
+    margin: 20px 0;
+}
+
+/* Button Styling */
+.refreshButton {
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #111;
+    border-radius: 8px;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    margin: 20px auto;
+}
+
+/* Shadow effect for button */
+.refreshButton:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+/* Hover effect to move shadow */
+.refreshButton:hover:after {
+    transform: translate(0, 0);
+}
+
+/* Styling for button click */
+.refreshButton:active {
+    background-color: #e7e1e1;
+    outline: 0;
+}
